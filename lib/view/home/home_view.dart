@@ -22,14 +22,15 @@ class HomeView extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const DetailView(),
-                ),
-              );
+              Get.to(const DetailView());
             },
             child: const Text("navigate to detail screen"),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Get.to(const DetailView());
+            },
+            child: const Text("navigate to login screen"),
           ),
         ],
       ),
